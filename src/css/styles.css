@@ -64,3 +64,40 @@ section {
   min-height: 400px;
   padding: 2em 0;
 }
+
+/* Responsive media queries */
+/* Mobile */
+@media (max-width: 414px) {
+  nav ul li {
+    display: block;
+    width: 100%;
+  }
+
+  .main {
+    margin-top: 220px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablet */
+@media (min-width: 415px) and (max-width: 1024px) {
+  .main {
+    margin-top: 80px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1025px) {
+  .main {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
