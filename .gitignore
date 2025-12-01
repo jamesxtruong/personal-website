@@ -1,0 +1,12 @@
+# Operating System Files
+.DS_Store
+
+# Editor Files
+.vscode/
+
+# Temporary files
+*.tmp
+.cache/
+
+# Other files
+*.txt 
