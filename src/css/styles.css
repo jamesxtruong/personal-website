@@ -1,3 +1,66 @@
 /* Personal Portfolio - Custom Styles */
 
-/* TODO: Add custom CSS styles */
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #fcfcfc;
+  --black: #040404;
+  --gray1: #333333;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  font-size: 1.2em;
+  color: var(--gray1);
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Navigation - inspired by 03-css/06-media-queries.css */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--black);
+  z-index: 1000;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  display: block;
+  padding: 1em 1.5em;
+  text-decoration: none;
+  color: var(--white);
+}
+
+nav ul li a:hover {
+  background-color: var(--gray-dark);
+}
+
+/* Main content area */
+.main {
+  margin-top: 60px;
+  padding: 2em;
+}
+
+/* Sections */
+section {
+  min-height: 400px;
+  padding: 2em 0;
+}
