@@ -33,16 +33,16 @@ A professional portfolio website showcasing my skills, experience, and projects.
 
 ```
 personal-website/
-├── index.html          # TODO: Main HTML file
 ├── src/                # Source files
-│   ├── js/             # JavaScript files
-│   │   └── index.js    # TODO: Main JavaScript file
+│   ├── assets/         # Images and other assets
+│   │   └── images/     # TODO: Image file(s)
 │   ├── css/            # CSS stylesheets
-│   │   └── styles.css  # TODO: Add custom styles
-│   └── assets/         # Images and other assets
-│       └── images/     # TODO: Add image file(s)
-├── README.md           # This file
-└── .gitignore          # Git ignore rules
+│   │   └── styles.css  # Custom styles and responsive design
+│   └── js/             # JavaScript files
+│       └── index.js    # TODO: Interactive functionality
+├── .gitignore          # Git ignore rules
+├── index.html          # Main HTML file (single-page portfolio)
+└── README.md           # This file
 ```
 
 ## How to Run
