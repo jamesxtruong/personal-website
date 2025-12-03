@@ -26,7 +26,7 @@ h2 {
   text-align: center;
 }
 
-/* Navigation - inspired by 03-css/06-media-queries.css */
+/* Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -72,6 +72,56 @@ section {
 
 figure {
   text-align: center;
+}
+
+/* Work Experience (resume style) */
+.job-container {
+  margin-bottom: 2.5em;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75em;
+}
+
+.job-left h3 {
+  margin: 0 0 0.25em 0;
+  font-size: 1.25em;
+  font-weight: bold;
+}
+
+.job-left .job-title {
+  margin: 0;
+  font-style: italic;
+}
+
+.job-right {
+  text-align: right;
+}
+
+.job-right .location,
+.job-right .date {
+  margin: 0 0 0.25em 0;
+}
+
+.job-right .location {
+  font-weight: 500;
+}
+
+.job-right .date {
+  font-style: italic;
+  color: #666;
+}
+
+.job-container ul {
+  margin: 0.5em 0 0 1.5em;
+  padding: 0;
+}
+
+.job-container ul li {
+  margin-bottom: 0.5em;
 }
 
 /* Contact Form */
@@ -175,6 +225,16 @@ form input[type='reset']:hover {
   form input[type='email'],
   form textarea {
     font-size: 16px;
+  }
+
+  /* Work Experience (stack on mobile view) */
+  .job-header {
+    flex-direction: column;
+  }
+
+  .job-right {
+    text-align: left;
+    margin-top: 0.5em;
   }
 }
 
