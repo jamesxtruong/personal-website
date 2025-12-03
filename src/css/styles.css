@@ -8,6 +8,7 @@
   --white: #fcfcfc;
   --black: #040404;
   --gray1: #333333;
+  --blue: #1e90ff;
 }
 
 body {
@@ -73,6 +74,68 @@ figure {
   text-align: center;
 }
 
+/* Contact Form */
+#contact h2 {
+  text-align: left;
+}
+
+form {
+  max-width: 500px;
+}
+
+form div {
+  margin-bottom: 1em;
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+form input[type='text'],
+form input[type='email'],
+form textarea {
+  width: 100%;
+  padding: 0.5em;
+  font-size: 1em;
+  border: 1px solid var(--gray1);
+}
+
+form input[type='submit'],
+form input[type='reset'] {
+  padding: 0.75em 2em;
+  font-size: 1em;
+  border: none;
+  margin-right: 0.5em;
+}
+
+form input[type='submit'] {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+form input[type='submit']:hover {
+  background-color: var(--blue);
+  color: var(--white);
+  opacity: 0.8;
+}
+
+form input[type='reset'] {
+  background-color: var(--gray1);
+  color: var(--white);
+}
+
+form input[type='reset']:hover {
+  background-color: var(--gray1);
+  color: var(--white);
+  opacity: 0.8;
+}
+
+#formMessage {
+  margin-top: 1em;
+  font-weight: bold;
+}
+
 /* Responsive media queries */
 /* Mobile */
 @media (max-width: 414px) {
@@ -103,6 +166,16 @@ figure {
     min-height: 300px;
     padding: 1.5em 0;
   }
+
+  form {
+    max-width: 100%;
+  }
+
+  form input[type='text'],
+  form input[type='email'],
+  form textarea {
+    font-size: 16px;
+  }
 }
 
 /* Tablet */
@@ -114,6 +187,10 @@ figure {
 
   section {
     padding: 1.5em 0;
+  }
+
+  form {
+    max-width: 600px;
   }
 }
 
@@ -128,5 +205,9 @@ figure {
 
   section {
     padding: 3em 0;
+  }
+
+  form {
+    max-width: 600px;
   }
 }
