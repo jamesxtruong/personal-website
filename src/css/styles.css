@@ -21,6 +21,10 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 /* Navigation - inspired by 03-css/06-media-queries.css */
 nav {
   position: fixed;
@@ -65,9 +69,14 @@ section {
   padding: 2em 0;
 }
 
+figure {
+  text-align: center;
+}
+
 /* Responsive media queries */
 /* Mobile */
 @media (max-width: 414px) {
+  /* Navigation */
   nav ul li {
     display: block;
     width: 100%;
@@ -75,14 +84,24 @@ section {
 
   .main {
     margin-top: 220px;
+    padding: 1em;
+  }
+
+  body {
+    font-size: 1em;
   }
 
   h1 {
-    font-size: 2rem;
+    font-size: 1.75rem;
   }
 
   h2 {
     font-size: 1.5rem;
+  }
+
+  section {
+    min-height: 300px;
+    padding: 1.5em 0;
   }
 }
 
@@ -90,6 +109,11 @@ section {
 @media (min-width: 415px) and (max-width: 1024px) {
   .main {
     margin-top: 80px;
+    padding: 1.5em;
+  }
+
+  section {
+    padding: 1.5em 0;
   }
 }
 
@@ -99,5 +123,10 @@ section {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
+    padding: 2em;
+  }
+
+  section {
+    padding: 3em 0;
   }
 }
