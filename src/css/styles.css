@@ -8,7 +8,7 @@
   --white: #fcfcfc;
   --black: #040404;
   --gray1: #333333;
-  --blue: #1e90ff;
+  --blue: #0066cc;
 }
 
 body {
@@ -20,10 +20,12 @@ body {
 
 h1 {
   text-align: center;
+  margin-top: 1em;
 }
 
 h2 {
   text-align: center;
+  margin-top: 1em;
 }
 
 /* Navigation */
@@ -66,12 +68,28 @@ nav ul li a:hover {
 
 /* Sections */
 section {
-  min-height: 400px;
+  min-height: 250px;
   padding: 2em 0;
 }
 
-figure {
-  text-align: center;
+/* About section images */
+#about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about .image-container {
+  display: flex;
+  gap: 7em;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+}
+
+#about figure {
+  margin: 0;
 }
 
 /* Work Experience (resume style) */
@@ -95,6 +113,8 @@ figure {
 .job-left .job-title {
   margin: 0;
   font-style: italic;
+  font-size: 1em;
+  font-weight: normal;
 }
 
 .job-right {
@@ -113,6 +133,8 @@ figure {
 .job-right .date {
   font-style: italic;
   color: #666;
+  font-size: 1em;
+  font-weight: normal;
 }
 
 .job-container ul {
@@ -219,7 +241,7 @@ form input[type='reset']:hover {
   margin: 0;
 }
 
-#projects .carousel-caption h5 {
+#projects .carousel-caption h3 {
   font-size: 1.5em;
   font-weight: bold;
   margin-bottom: 0.5em;
@@ -232,9 +254,15 @@ form input[type='reset']:hover {
 
 #projects .carousel-control-prev-icon,
 #projects .carousel-control-next-icon {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 50%;
   padding: 1.5em;
+}
+
+#projects .carousel-control-prev .visually-hidden,
+#projects .carousel-control-next .visually-hidden {
+  color: #000 !important;
+  background-color: transparent !important;
 }
 
 #projects .carousel-indicators {
@@ -271,6 +299,8 @@ form input[type='reset']:hover {
 
   .main {
     margin-top: 220px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1em;
   }
 
@@ -301,6 +331,12 @@ form input[type='reset']:hover {
     font-size: 16px;
   }
 
+  /* Stack images vertically for mobile */
+  #about .image-container {
+    flex-direction: column;
+    gap: 1.5em;
+  }
+
   /* Work Experience (stack on mobile view) */
   .job-header {
     flex-direction: column;
@@ -323,7 +359,7 @@ form input[type='reset']:hover {
     padding: 1em;
   }
 
-  #projects .carousel-caption h5 {
+  #projects .carousel-caption h3 {
     font-size: 1.1em;
   }
 
@@ -336,11 +372,18 @@ form input[type='reset']:hover {
 @media (min-width: 415px) and (max-width: 1024px) {
   .main {
     margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 1.5em;
   }
 
   section {
     padding: 1.5em 0;
+  }
+
+  /* Note: Reduce gap on tablet */
+  #about .image-container {
+    gap: 3em;
   }
 
   form {
