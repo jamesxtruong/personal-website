@@ -186,6 +186,80 @@ form input[type='reset']:hover {
   font-weight: bold;
 }
 
+/* Projects Carousel */
+#projects .carousel {
+  max-width: 800px;
+  margin: 2em auto;
+  padding-bottom: 50px;
+}
+
+#projects .carousel-inner {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+#projects .carousel-item img {
+  height: 350px;
+  width: 100%;
+  object-fit: contain;
+  background-color: #f8f9fa;
+  border-radius: 8px 8px 0 0;
+  display: block;
+  padding: 2em;
+}
+
+#projects .carousel-caption {
+  position: static;
+  background-color: var(--gray1);
+  color: var(--white);
+  padding: 1.5em;
+  border-radius: 0 0 8px 8px;
+  text-align: left;
+  margin: 0;
+}
+
+#projects .carousel-caption h5 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+#projects .carousel-caption p {
+  font-size: 1em;
+  margin: 0;
+}
+
+#projects .carousel-control-prev-icon,
+#projects .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 1.5em;
+}
+
+#projects .carousel-indicators {
+  position: relative;
+  bottom: auto;
+  margin: 0;
+  padding: 1em 0;
+  background-color: #e9ecef;
+  border: none;
+}
+
+#projects .carousel-indicators button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #adb5bd;
+  opacity: 1;
+  border: none;
+}
+
+#projects .carousel-indicators button.active {
+  background-color: var(--gray1);
+}
+
 /* Responsive media queries */
 /* Mobile */
 @media (max-width: 414px) {
@@ -236,6 +310,26 @@ form input[type='reset']:hover {
     text-align: left;
     margin-top: 0.5em;
   }
+
+  #projects .carousel {
+    max-width: 100%;
+  }
+
+  #projects .carousel-item img {
+    height: 200px;
+  }
+
+  #projects .carousel-caption {
+    padding: 1em;
+  }
+
+  #projects .carousel-caption h5 {
+    font-size: 1.1em;
+  }
+
+  #projects .carousel-caption p {
+    font-size: 0.9em;
+  }
 }
 
 /* Tablet */
@@ -251,6 +345,10 @@ form input[type='reset']:hover {
 
   form {
     max-width: 600px;
+  }
+
+  #projects .carousel-item img {
+    height: 280px;
   }
 }
 
