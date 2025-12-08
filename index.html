@@ -153,55 +153,79 @@
       <section id="projects">
         <h2>Projects</h2>
         <div id="projectsCarousel" class="carousel slide">
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#projectsCarousel"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#projectsCarousel"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#projectsCarousel"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#projectsCarousel"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
+          </div>
           <div class="carousel-inner">
-            <div class="carousel-indicators">
-              <button
-                type="button"
-                data-bs-target="#projectsCarousel"
-                data-bs-slide-to="0"
-                class="active"
-                aria-current="true"
-                aria-label="Slide 1"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#projectsCarousel"
-                data-bs-slide-to="1"
-                aria-label="Slide 2"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#projectsCarousel"
-                data-bs-slide-to="2"
-                aria-label="Slide 3"
-              ></button>
-              <button
-                type="button"
-                data-bs-target="#projectsCarousel"
-                data-bs-slide-to="3"
-                aria-label="Slide 4"
-              ></button>
-            </div>
-            <div class="carousel-item">
+            <div class="carousel-item active">
               <img
                 src="src/assets/images/planner.png"
                 class="d-block w-100"
                 alt="Schedule Planner"
               />
               <div class="carousel-caption">
-                <h3>Schedule Planner</h3>
-                <p>TODO</p>
+                <div class="caption-content">
+                  <h3>Schedule Planner</h3>
+                  <p>
+                    C++ event management application using binary search trees
+                    to organize meetings, workshops, and conventions with an
+                    intuitive menu-driven interface.
+                  </p>
+                </div>
+                <a
+                  href="https://github.com/jamesxtruong/schedule-planner"
+                  target="_blank"
+                  class="btn btn-sm btn-light mt-2"
+                  >View on GitHub</a
+                >
               </div>
             </div>
-            <div class="carousel-item active">
+            <div class="carousel-item">
               <img
                 src="src/assets/images/classroom.png"
                 class="d-block w-100"
                 alt="Classroom Planner"
               />
               <div class="carousel-caption">
-                <h3>Classroom Planner</h3>
-                <p>TODO</p>
+                <div class="caption-content">
+                  <h3>Classroom Planner</h3>
+                  <p>
+                    Python classroom scheduling system that matches courses to
+                    rooms based on capacity, equipment, computer labs, lecture
+                    halls, and remote-enabled spaces.
+                  </p>
+                </div>
+                <a
+                  href="https://github.com/jamesxtruong/classroom-planner"
+                  target="_blank"
+                  class="btn btn-sm btn-light mt-2"
+                  >View on GitHub</a
+                >
               </div>
             </div>
             <div class="carousel-item">
@@ -211,8 +235,20 @@
                 alt="ChocAn"
               />
               <div class="carousel-caption">
-                <h3>ChocAn</h3>
-                <p>TODO: Healthcare management system.</p>
+                <div class="caption-content">
+                  <h3>ChocAn</h3>
+                  <p>
+                    C++ healthcare service management system with real-time
+                    member verification, automated service tracking, provider
+                    directory lookups, and weekly reporting.
+                  </p>
+                </div>
+                <a
+                  href="https://github.com/jamesxtruong/ChocAn"
+                  target="_blank"
+                  class="btn btn-sm btn-light mt-2"
+                  >View on GitHub</a
+                >
               </div>
             </div>
             <div class="carousel-item">
@@ -222,8 +258,20 @@
                 alt="RoboSnake"
               />
               <div class="carousel-caption">
-                <h3>RoboSnake</h3>
-                <p>TODO</p>
+                <div class="caption-content">
+                  <h3>RoboSnake</h3>
+                  <p>
+                    TypeScript competitive multiplayer game where developers
+                    create AI agents to control snakes in a battle to collect
+                    the most apples on a shared board.
+                  </p>
+                </div>
+                <a
+                  href="https://github.com/jamesxtruong/robosnake"
+                  target="_blank"
+                  class="btn btn-sm btn-light mt-2"
+                  >View on GitHub</a
+                >
               </div>
             </div>
           </div>
