@@ -13,7 +13,7 @@
   <body>
     <!-- Navigation -->
     <header>
-      <nav>
+      <nav aria-label="Main navigation">
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -36,16 +36,12 @@
             <img
               src="src/assets/images/psulogo_vert_4cp_Transparent.png"
               alt="Portland State University Logo"
-              width="200"
-              height="200"
             />
           </figure>
           <figure>
             <img
               src="src/assets/images/profile-pic.jpg"
               alt="Profile picture of James Truong"
-              width="200"
-              height="200"
             />
           </figure>
         </div>
@@ -67,11 +63,11 @@
         <div class="job-container">
           <div class="job-header">
             <div class="job-left">
-              <h3>A-dec Inc.</h3>
+              <h3 class="company">A-dec Inc.</h3>
               <h4 class="job-title">MECOP SWE Intern</h4>
             </div>
             <div class="job-right">
-              <p class="location">Newberg, OR</p>
+              <h3 class="location">Newberg, OR</h3>
               <h4 class="date">April 2025 - Present</h4>
             </div>
           </div>
@@ -98,11 +94,11 @@
         <div class="job-container">
           <div class="job-header">
             <div class="job-left">
-              <h3>Siemens EDA</h3>
+              <h3 class="company">Siemens EDA</h3>
               <h4 class="job-title">MECOP SWE Intern</h4>
             </div>
             <div class="job-right">
-              <p class="location">Wilsonville, OR</p>
+              <h3 class="location">Wilsonville, OR</h3>
               <h4 class="date">April 2024 - September 2024</h4>
             </div>
           </div>
@@ -125,11 +121,11 @@
         <div class="job-container">
           <div class="job-header">
             <div class="job-left">
-              <h3>Danny's Auto Repair LLC.</h3>
+              <h3 class="company">Danny's Auto Repair LLC.</h3>
               <h4 class="job-title">Automotive Technician</h4>
             </div>
             <div class="job-right">
-              <p class="location">Portland, OR</p>
+              <h3 class="location">Portland, OR</h3>
               <h4 class="date">September 2015 - April 2024</h4>
             </div>
           </div>
@@ -148,11 +144,20 @@
             </li>
           </ul>
         </div>
+        <h3>Technical Skills</h3>
+        <p>
+          C, C++, Python, TypeScript, JavaScript, HTML, CSS, Bootstrap, Bruno,
+          Qt, PostgreSQL, MongoDB, Mermaid, Linux, Git, Jira, Jama
+        </p>
       </section>
       <!-- Projects -->
       <section id="projects">
         <h2>Projects</h2>
-        <div id="projectsCarousel" class="carousel slide">
+        <div
+          id="projectsCarousel"
+          class="carousel slide"
+          aria-label="Project showcase carousel"
+        >
           <div class="carousel-indicators">
             <button
               type="button"
@@ -201,6 +206,7 @@
                   href="https://github.com/jamesxtruong/schedule-planner"
                   target="_blank"
                   class="btn btn-sm btn-light mt-2"
+                  aria-label="View Schedule Planner on GitHub (opens in new tab)"
                   >View on GitHub</a
                 >
               </div>
@@ -224,6 +230,7 @@
                   href="https://github.com/jamesxtruong/classroom-planner"
                   target="_blank"
                   class="btn btn-sm btn-light mt-2"
+                  aria-label="View Classroom Planner on GitHub (opens in new tab)"
                   >View on GitHub</a
                 >
               </div>
@@ -247,6 +254,7 @@
                   href="https://github.com/jamesxtruong/ChocAn"
                   target="_blank"
                   class="btn btn-sm btn-light mt-2"
+                  aria-label="View ChocAn on GitHub (opens in new tab)"
                   >View on GitHub</a
                 >
               </div>
@@ -270,6 +278,7 @@
                   href="https://github.com/jamesxtruong/robosnake"
                   target="_blank"
                   class="btn btn-sm btn-light mt-2"
+                  aria-label="View RoboSnake on GitHub (opens in new tab)"
                   >View on GitHub</a
                 >
               </div>
@@ -298,7 +307,59 @@
       <!-- Contact -->
       <section id="contact">
         <h2>Contact</h2>
-        <form id="contactForm" action="/submit">
+        <div class="contact-info">
+          <p>
+            <img
+              src="src/assets/images/email.png"
+              alt="Email icon"
+              class="contact-icon"
+            />
+            jamesxtruong@gmail.com
+          </p>
+          <p>
+            <img
+              src="src/assets/images/location.png"
+              alt="Location icon"
+              class="contact-icon"
+            />
+            Portland, OR
+          </p>
+          <p>
+            <img
+              src="src/assets/images/linkedin.png"
+              alt="LinkedIn icon"
+              class="contact-icon"
+            />
+            <a
+              href="https://www.linkedin.com/in/jamesxtruong"
+              target="_blank"
+              aria-label="Visit James Truong's LinkedIn profile (opens in new tab)"
+              >LinkedIn</a
+            >
+          </p>
+          <p>
+            <img
+              src="src/assets/images/github.png"
+              alt="GitHub icon"
+              class="contact-icon"
+            />
+            <a
+              href="https://github.com/jamesxtruong"
+              target="_blank"
+              aria-label="Visit James Truong's GitHub profile (opens in new tab)"
+              >GitHub</a
+            >
+          </p>
+        </div>
+        <p class="contact-message">
+          Interested in working together? You can use the form below to contact
+          me!
+        </p>
+        <form
+          id="contactForm"
+          action="https://formspree.io/f/mnnebdnd"
+          method="POST"
+        >
           <div>
             <label for="name">Name:</label>
             <input
@@ -329,6 +390,7 @@
               required
             ></textarea>
           </div>
+          <div id="formMessage"></div>
           <div>
             <input type="submit" value="Submit" />
             <input type="reset" value="Reset" />
