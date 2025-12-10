@@ -81,7 +81,7 @@ This project builds upon CS463 web development skills and concepts learned from 
 
 **Bootstrap Carousel Component:**
 
-- Bootstrap Carousel with Captions: https://getbootstrap.com/docs/4.0/components/carousel/
+- Bootstrap Carousel with Captions: https://getbootstrap.com/docs/5.3/components/carousel/
 - Modified to display and link GitHub projects
 
 **Contact Form:**
