@@ -79,9 +79,10 @@ This project builds upon CS463 web development skills and concepts learned from 
 
 ### External Resources Used
 
-**Bootstrap Carousel Component:**
+**Bootstrap Components:**
 
 - Bootstrap Carousel with Captions: https://getbootstrap.com/docs/5.3/components/carousel/
+- Buttons: https://getbootstrap.com/docs/5.3/components/buttons/
 - Modified to display and link GitHub projects
 
 **Contact Form:**
@@ -96,6 +97,21 @@ This project builds upon CS463 web development skills and concepts learned from 
   method="POST"
 ></form>
 ```
+
+**Fetch API:**
+
+- Mozilla: https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+- Used to send form data to Formspree endpoint
+
+**CSS Override:**
+
+- dev.to article: https://dev.to/nicm42/css-overriding-styles-177k
+- Used to override Bootstrap default styles with custom CSS to resolve contrast warning.
+
+**Accessibility Testing Tools:**
+
+- WAVE Web Accessibility Extension: https://wave.webaim.org/extension/
+- Lighthouse: https://developers.google.com/web/tools/lighthouse
 
 **Image Assets:**
 
